@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" src="/favicon.ico">
+    <title>志愿智能—登陆</title>
+</head>
+
+<body>
+    <script>
+        // 检测屏幕尺寸
+        var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+        var screenHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+
+        // 创建一个隐藏的表单字段，将屏幕尺寸设置为其值
+        var screenSizeField = document.createElement('input');
+        screenSizeField.type = 'hidden';
+        screenSizeField.name = 'screenSize';
+        screenSizeField.value = screenWidth + 'x' + screenHeight;
+
+        // 将表单字段添加到一个表单中，并将表单提交到服务器
+        var form = document.createElement('form');
+        form.method = 'POST';
+        form.action = '/login';
+        form.appendChild(screenSizeField);
+        document.body.appendChild(form);
+        form.submit();
+    </script>
+
+</body>
+
+</html>

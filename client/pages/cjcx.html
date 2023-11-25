@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>志愿智能—成绩查询</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="icon" src="/favicon.ico">
+  <style>
+    #main {
+      display: block;
+    }
+
+    #loadingDiv {
+      display: none;
+    }
+
+    /* 表格样式 */
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    th,
+    td {
+      text-align: center;
+      padding: 8px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+    th {
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    .item {
+      flex-basis: calc(33.33% - 20px);
+      margin-bottom: 20px;
+    }
+
+    .main_footer {
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+
+  <body>
+    <div style="width: 100%; height: 0; padding-bottom: 25%; position: relative;">
+      <img src="images/成绩查询.jpg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+    </div>
+    <!-- 成绩查询表格 -->
+    <div class="container" style="margin-bottom: 20px;margin-top:5px;">
+      <table>
+        <thead>
+          <tr>
+            <th width="13%">省市</th>
+            <th width="13%">出分时间</th>
+            <th width="24%">成绩查询渠道</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="al-bold al-center">北京</td>
+            <td><a target="_blank">6月25日</a></td>
+            <td><a href="https://www.bjeea.cn/" target="_blank">点击查看</a></td>
+          </tr>
+          <tr>
+            <td class="al-bold al-center">山东</td>
+            <td><a target="_blank">6月25日</a></td>
+            <td><a href="https://www.sdzk.cn/" target="_blank">点击查看</a></td>
+          </tr>
+          <tr>
+            <td class="al-bold al-center">河北</td>
+            <td><a target="_blank">6月25日</a></td>
+            <td><a href="http://www.hebeea.edu.cn/" target="_blank">点击查看</a></td>
+          </tr>
+          <tr>
+            <td class="al-bold al-center">天津</td>
+            <td><a target="_blank">6月24日</a></td>
+            <td><a href="http://www.zhaokao.net/" target="_blank">点击查看</a></td>
+          </tr>
+          <tr>
+            <td class="al-bold al-center">山西</td>
+            <td><a target="_blank">6月24日</a></td>
+            <td><a href="http://www.sxkszx.cn/index.html" target="_blank">点击查看</a></td>
+          </tr>
+          <tr>
+            <td class="al-bold al-center">内蒙古</td>
+            <td><a target="_blank">6月23日</a></td>
+            <td><a href="http://www.nm.zsks.cn/" target="_blank">点击查看</a></td>
+          </tr>
+          <tr>
+            <td class="al-bold al-center">辽宁</td>
+            <td><a target="_blank">6月24日</a></td>
+            <td><a href="http://www.lnzsks.com/" target="_blank">点击查看</a></td>
+          </tr>
+          <tr>
+            <td class="al-bold al-center">吉林</td>
+            <td><a target="_blank">6月23日</a></td>
+            <td><a href="http://www.jleea.edu.cn/" target="_blank">点击查看</a></td>
+          </tr>
+          <tr>
+            <td class="al-bold al-center">黑龙江</td>
+            <td><a target="_blank">6月24日</a></td>
+            <td><a href="http://www.lzk.hl.cn/" target="_blank">点击查看</a></td>
+          </tr>
+          <tr>
+            <td class="al-bold al-center">上海</td>
+            <td><a target="_blank">6月23日</a></td>
+            <td><a href="http://www.shmeea.edu.cn/" target="_blank">点击查看</a></td>
+          </tr>
+          <tr>
+            <td class="al-bold al-center">江苏</td>
+            <td><a target="_blank">6月24日</a></td>
+            <td><a href="http://www.jseea.cn/index.html" target="_blank">点击查看</a></td>
+          </tr>
+          <tr>
+            <td class="al-bold al-center">浙江</td>
+            <td><a target="_blank">6月25日</a></td>
+            <td><a href="http://www.zjzs.net/" target="_blank">点击查看</a></td>
+          </tr>
+          <tr>
+            <td class="al-bold al-center">安徽</td>
+            <td><a target="_blank">6月24日</a></td>
+            <td><a href="https://www.ahzsks.cn/" target="_blank">点击查看</a></td>
+          </tr>
+          <tr>
+            <td class="al-bold al-center">福建</td>
+            <td><a target="_blank">6月24日</a></td>
+            <td><a href="http://www.eeafj.cn/" target="_blank">点击查看</a></td>
+          </tr>
+          <tr>
+            <td class="al-bold al-center">江西</td>
+            <td><a target="_blank">6月23日</a></td>
+            <td><a href="http://www.jxeea.cn/" target="_blank">点击查看</a></td>
+          </tr>
+          <tr>
+            <td class="al-bold al-center">河南</td>
+            <td><a target="_blank">6月25日</a></td>
+            <td><a href="http://www.heao.gov.cn/" target="_blank">点击查看</a></td>
+          </tr>
+          <tr>
+            <td class="al-bold al-center">湖北</td>
+            <td><a target="_blank">6月25日</a></td>
+            <td><a href="http://zsxx.e21.cn/e21html/" target="_blank">点击查看</a></td>
+          </tr>
+          <tr>
+            <td class="al-bold al-center">湖南</td>
+            <td><a target="_blank">6月25日</a></td>
+            <td><a href="http://eea.gd.gov.cn/" target="_blank">点击查看</a></td>
+          </tr>
+          <tr>
+            <td class="al-bold al-center">广东</td>
+            <td><a target="_blank">6月25日</a></td>
+            <td><a href="http://eea.gd.gov.cn/" target="_blank">点击查看</a></td>
+          </tr>
+          <tr>
+            <td class="al-bold al-center">广西</td>
+            <td><a target="_blank">6月24日</a></td>
+            <td><a href="http://www.gxeea.cn/" target="_blank">点击查看</a></td>
+          </tr>
+          <tr>
+            <td class="al-bold al-center">海南</td>
+            <td><a target="_blank">6月25日</a></td>
+            <td><a href="http://ea.hainan.gov.cn/" target="_blank">点击查看</a></td>
+          </tr>
+          <tr>
+            <td class="al-bold al-center">重庆</td>
+            <td><a target="_blank">6月24日</a></td>
+            <td><a href="http://www.cqksy.cn/" target="_blank">点击查看</a></td>
+          </tr>
+          <tr>
+            <td class="al-bold al-center">四川</td>
+            <td><a target="_blank">6月23日</a></td>
+            <td><a href="http://www.sceea.cn/" target="_blank">点击查看</a></td>
+          </tr>
+          <tr>
+            <td class="al-bold al-center">贵州</td>
+            <td><a target="_blank">6月24日</a></td>
+            <td><a href="http://www.eaagz.org.cn/" target="_blank">点击查看</a></td>
+          </tr>
+          <tr>
+            <td class="al-bold al-center">云南</td>
+            <td><a target="_blank">6月23日</a></td>
+            <td><a href="http://www.ynzs.cn/" target="_blank">点击查看</a></td>
+          </tr>
+          <tr>
+            <td class="al-bold al-center">西藏</td>
+            <td><a target="_blank">6月25日</a></td>
+            <td><a href="http://zsks.edu.xizang.gov.cn/" target="_blank">点击查看</a></td>
+          </tr>
+          <tr>
+            <td class="al-bold al-center">陕西</td>
+            <td><a target="_blank">6月24日</a></td>
+            <td><a href="http://www.sneac.com/" target="_blank">点击查看</a></td>
+          </tr>
+          <tr>
+            <td class="al-bold al-center">甘肃</td>
+            <td><a target="_blank">6月25日</a></td>
+            <td><a href="http://www.ganseea.cn/" target="_blank">点击查看</a></td>
+          </tr>
+          <tr>
+            <td class="al-bold al-center">青海</td>
+            <td><a target="_blank">6月25日</a></td>
+            <td><a href="http://www.qhjyks.com/" target="_blank">点击查看</a></td>
+          </tr>
+          <tr>
+            <td class="al-bold al-center">宁夏</td>
+            <td><a target="_blank">6月23日</a></td>
+            <td><a href="http://www.nxjyks.cn/" target="_blank">点击查看</a></td>
+          </tr>
+          <tr>
+            <td class="al-bold al-center">新疆</td>
+            <td><a target="_blank">6月24日</a></td>
+            <td><a href="http://www.xjzk.gov.cn/" target="_blank">点击查看</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+
+</html>

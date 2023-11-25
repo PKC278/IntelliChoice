@@ -1,0 +1,52 @@
+[
+    {
+        "name": "get_current_weather",
+        "description": "根据提供的位置获取天气信息和详细信息网址,支持查询多个区域",
+        "parameters": {
+            "type": "object",
+            "properties": {
+                "location": {
+                    "type": "string",
+                    "description": "区域,用户提供的最小行政区,可以同时查询多个地区,以','分割, e.g. 历城区,朝阳区"
+                },
+                "adms": {
+                    "type": "string",
+                    "description": "用户提供的最小行政区的上级行政区,可以同时查询多个地区,以','分割, e.g. 济南,北京"
+                }
+            },
+            "required": [
+                "location",
+                "adms"
+            ]
+        }
+    },
+    {
+        "name": "get_gaokao_scoreline",
+        "description": "根据用户提供的信息从数据库专业分数线表中查询院校专业分数线",
+        "parameters": {
+            "type": "object",
+            "properties": {
+                "area": {
+                    "type": "string",
+                    "description": "地区,可以包含多个,以','分隔, e.g. 上海,北京"
+                },
+                "year": {
+                    "type": "string",
+                    "description": "年份,可以包含多个,以','分隔, e.g. 2020,2019"
+                },
+                "school": {
+                    "type": "string",
+                    "description": "学校名称,可以包含多个,以','分隔, e.g. 上海交通大学,北京大学"
+                },
+                "major": {
+                    "type": "string",
+                    "description": "专业名称,可以包含多个,以','分隔, e.g. 水利,计算机"
+                },
+                "score": {
+                    "type": "string",
+                    "description": "分数,可以包含多个,以','分隔, e.g. 600,700"
+                }
+            }
+        }
+    }
+]
