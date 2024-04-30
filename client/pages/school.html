@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>院校库</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/school.css">
+    <link rel="icon" src="/favicon.ico">
+</head>
+
+<body>
+    <div class="title container-fluid">
+        <h1 style="color: white;">院校库</h1>
+    </div>
+    <div class="middle">
+        <div class="row search">
+            <div class="col-sm-6">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control search-input" id="search-input" placeholder="请输入院校名称">
+                    <span class="delButton hide"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="#caccd0" class="bi bi-x-circle-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z" />
+                        </svg></span>
+                    <button class="btn btn-success" id="search-btn">搜索</button>
+                </div>
+            </div>
+            <div class="col-sm-6 search-info">
+                <p>（ 注：本名单未包含港澳台地区高等学校 ）</p>
+            </div>
+        </div>
+        <div style="margin-top: -30px;">
+            <div class="item-box row address">
+                <div class="item-title col-sm-2">院校所在地</div>
+                <div class="item-options col-sm-10">
+                    <span class="selected">全部</span>
+                    <span>北京</span>
+                    <span>天津</span>
+                    <span>河北</span>
+                    <span>山西</span>
+                    <span>内蒙古</span>
+                    <span>辽宁</span>
+                    <span>吉林</span>
+                    <span>黑龙江</span>
+                    <span>上海</span>
+                    <span>江苏</span>
+                    <span>浙江</span>
+                    <span>安徽</span>
+                    <span>福建</span>
+                    <span>江西</span>
+                    <span>山东</span>
+                    <span>河南</span>
+                    <span>湖北</span>
+                    <span>湖南</span>
+                    <span>广东</span>
+                    <span>广西</span>
+                    <span>海南</span>
+                    <span>重庆</span>
+                    <span>四川</span>
+                    <span>贵州</span>
+                    <span>云南</span>
+                    <span>西藏</span>
+                    <span>陕西</span>
+                    <span>甘肃</span>
+                    <span>青海</span>
+                    <span>宁夏</span>
+                    <span>新疆</span>
+                </div>
+            </div>
+        </div>
+        <div style="margin-top: -30px;">
+            <div class="item-box row type">
+                <div class="item-title col-sm-2">主管部门类别</div>
+                <div class="item-options col-sm-10">
+                    <span class="selected">全部</span>
+                    <span>教育部</span>
+                    <span>其他部委</span>
+                    <span>地方</span>
+                    <span>军校</span>
+                </div>
+            </div>
+        </div>
+        <div style="margin-top: -30px;">
+            <div class="item-box row level">
+                <div class="item-title col-sm-2">学历层次</div>
+                <div class="item-options col-sm-10">
+                    <span class="selected">全部</span>
+                    <span>本科</span>
+                    <span>高职(专科)</span>
+                </div>
+            </div>
+        </div>
+        <div style="margin-top: -30px;">
+            <div class="item-box row feature">
+                <div class="item-title col-sm-2">院校特性</div>
+                <div class="item-options col-sm-10">
+                    <span class="selected">全部</span>
+                    <span>“双一流”建设高校</span>
+                    <span>研究生院</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="schoolCard">
+        <div class="row schoolList">
+        </div>
+    </div>
+    <br>
+    <button class="btn Favorites" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+        aria-controls="offcanvasRight">收藏夹</button>
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h5 id="offcanvasRightLabel">收藏夹栏</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+        </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/school.js"></script>
+</body>
+
+</html>

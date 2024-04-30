@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.6">
+    <title>首页</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="icon" src="/favicon.ico">
+</head>
+
+<body>
+    <!-- 轮播 -->
+    <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+        <!-- 指示符 -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+        </div>
+        <!-- 轮播图片 -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/banner_1.jpg" class="d-block" style="width:100%">
+            </div>
+            <div class="carousel-item">
+                <img src="images/banner_2.jpg" class="d-block" style="width:100%">
+            </div>
+            <div class="carousel-item">
+                <img src="images/banner_3.jpg" class="d-block" style="width:100%">
+            </div>
+        </div>
+        <!-- 左右切换按钮 -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+    <!-- 热门院校 -->
+    <div class="hot_school">
+        <div class="title_choices">
+            <span class="hschool_switch">
+                <p id="bk" class="active" onclick="hotSchoolSwitch(event);"><span class="hschool_location"></span>省内本科院校
+                </p>
+                <p id="zk" onclick="hotSchoolSwitch(event);"><span class="hschool_location"></span>省内专科院校</p>
+                <p id="oth_bk" onclick="hotSchoolSwitch(event);">省外本科院校</p>
+                <p id="oth_zk" onclick="hotSchoolSwitch(event);">省外专科院校</p>
+            </span>
+            <select class="title_choicesList">
+                <option value="bk">本科院校</option>
+                <option value="zk">专科院校</option>
+                <option value="oth_bk">省外本科院校</option>
+                <option value="oth_zk">省外专科院校</option>
+            </select>
+            <p onclick="hotSchoolReload();">换一换
+                <span class="reload_svg">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-arrow-repeat" viewBox="0 0 16 16">
+                        <path
+                            d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41zm-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9z" />
+                        <path fill-rule="evenodd"
+                            d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5.002 5.002 0 0 0 8 3zM3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9H3.1z" />
+                    </svg>
+                </span>
+            </p>
+        </div>
+        <div class="container-fluid school_list">
+            <div class="row">
+                <div class="school_listLoading"><svg version="1.1" id="loader-1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="60px" height="60px"
+                        viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+                        <path fill="#448ef7"
+                            d="M43.935,25.145c0-10.318-8.364-18.683-18.683-18.683c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615c8.072,0,14.615,6.543,14.615,14.615H43.935z">
+                            <animateTransform attributeType="xml" attributeName="transform" type="rotate" from="0 25 25"
+                                to="360 25 25" dur="0.6s" repeatCount="indefinite" />
+                        </path>
+                    </svg>
+                </div>
+                <div class="col-sm-3 list_left_box">
+                    <a class="list_left" href="">
+                        <div class="div_h1">
+                            <p></p>
+                        </div>
+                        <div class="school_moreInfo"></div>
+                        <div class="left_img">
+                            <img src="" alt="" style="width: 100%;">
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-9">
+                    <div class="right_box" id="hotSchoolList"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

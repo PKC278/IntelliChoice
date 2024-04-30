@@ -1,0 +1,10 @@
+requests
+flask
+openai
+mysql-connector-python
+flask_sse
+waitress
+flask_executor
+pandas
+pyecharts
+pywebio

@@ -1,0 +1,23 @@
+[
+    {
+        "name": "get_current_weather",
+        "description": "根据提供的位置获取天气信息和详细信息网址,支持同时查询多个区域,以','分割,顺序一一对应",
+        "parameters": {
+            "type": "object",
+            "properties": {
+                "location": {
+                    "type": "string",
+                    "description": "区域,用户提供的最小行政区,可以同时查询多个地区,以','分割, e.g. 历城区,朝阳区"
+                },
+                "adms": {
+                    "type": "string",
+                    "description": "用户提供的最小行政区的上级行政区,可以同时查询多个地区,以','分割, e.g. 济南,北京"
+                }
+            },
+            "required": [
+                "location",
+                "adms"
+            ]
+        }
+    }
+]

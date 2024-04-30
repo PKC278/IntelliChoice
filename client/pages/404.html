@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>志愿智能—404</title>
+    <script src="js/parallax.min.js"></script>
+    <link rel="stylesheet" href="css/404_font.css">
+    <link rel="stylesheet" href="css/404.css">
+    <link rel="icon" src="/favicon.ico">
+</head>
+
+<body>
+    <nav>
+        <div class="menu">
+            <p class="website_name"><a href="/index">IntelliChoice志愿智能</a></p>
+        </div>
+    </nav>
+    <section class="wrapper">
+        <div class="container">
+            <div id="scene" class="scene" data-hover-only="false">
+                <div class="circle" data-depth="1.2"></div>
+                <div class="one" data-depth="0.9">
+                    <div class="content">
+                        <span class="piece"></span>
+                        <span class="piece"></span>
+                        <span class="piece"></span>
+                    </div>
+                </div>
+                <div class="two" data-depth="0.60">
+                    <div class="content">
+                        <span class="piece"></span>
+                        <span class="piece"></span>
+                        <span class="piece"></span>
+                    </div>
+                </div>
+                <div class="three" data-depth="0.40">
+                    <div class="content">
+                        <span class="piece"></span>
+                        <span class="piece"></span>
+                        <span class="piece"></span>
+                    </div>
+                </div>
+                <p class="p404" data-depth="0.50">404</p>
+                <p class="p404" data-depth="0.10">404</p>
+            </div>
+            <div class="text">
+                <article>
+                    <p>哎呀！看起来你迷路了。<br>点击下面的按钮回到首页吧！</p>
+                    <button id="home">回到首页</button>
+                </article>
+            </div>
+        </div>
+    </section>
+    <script>
+        // Parallax Code
+        var scene = document.getElementById('scene');
+        var parallax = new Parallax(scene);
+        var home = document.getElementById('home');
+        home.addEventListener('click', function () {
+            window.location.href = "/";
+        })
+    </script>
+</body>
+
+</html>

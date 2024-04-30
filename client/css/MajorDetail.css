@@ -1,0 +1,190 @@
+#main {
+    display: block;
+}
+
+#loadingDiv {
+    display: none;
+}
+
+.majorInfo-main {
+    margin-bottom: 50px;
+}
+
+.zymc {
+    background-color: #58b384;
+    font-size: 60px;
+    font-weight: 500;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.zydw {
+    font-weight: 350;
+    margin-top: 20px;
+    white-space: nowrap;
+}
+
+.zydw div {
+    width: auto;
+    margin-top: 5px;
+}
+
+.zydwTips {
+    display: inline-block;
+    border: 1px solid #c7f4e4;
+    padding-left: 7px;
+    padding-right: 7px;
+    background-color: #effef9;
+    margin-right: 14px;
+    border-radius: 3px;
+}
+
+.title div {
+    padding-left: 14px;
+    border-left: 3px solid #1db278;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.title {
+    padding-bottom: 16px;
+    border-bottom: 1px solid #dee7f0;
+    margin-top: 30px;
+    font-weight: 400;
+}
+
+.content {
+    padding: 0 18px;
+    line-height: 32px;
+    font-size: 16px;
+    font-weight: 350;
+    margin-top: 20px;
+}
+
+
+.tj-div {
+    background-color: #f3f9fe;
+    border-radius: 10px;
+    padding: 10px 20px 10px 20px;
+    width: 320px;
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.tj-ico {
+    float: left;
+    margin-top: 5px;
+}
+
+.tj-div div {
+    padding-left: 70px;
+}
+
+.tj-div div p {
+    font-weight: 400;
+}
+
+.tj-div div span {
+    color: #1db278;
+}
+
+#nvbl svg {
+    height: 20px
+}
+
+.zhmyd {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+    white-space: nowrap;
+}
+
+.zhmyd li {
+    width: 100%;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.zhmyd li div .count {
+    margin-left: 8px;
+}
+
+.tjgx ul {
+    /* 清除样式 */
+    list-style: none;
+    /* 清除内外边距 */
+    margin: 0;
+    padding: 0;
+    margin-left: -18px;
+}
+
+.tjgx ul li {
+    padding: 5px 5px 5px 18px;
+}
+
+.tjgx ul li:nth-child(even) {
+    background-color: #f1fefa;
+}
+
+
+.tjgx ul li span:nth-child(2) {
+    float: right;
+}
+
+.xjzy span,
+.kyfx span,
+.cyfx span {
+    margin-right: 20px;
+    white-space: nowrap;
+    font-weight: 350;
+}
+
+.xjzy a {
+    color: black;
+    text-decoration: none;
+}
+
+.xjzy a:hover {
+    color: #1db278;
+}
+
+.secendTitle {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+#barChart {
+    margin-top: -20px;
+}
+
+.star {
+    display: inline-block;
+    margin-left: 3px;
+}
+
+.star svg {
+    margin-top: -5px;
+}
+
+@media (max-width: 440px) {
+    .star {
+        display: none;
+    }
+}
+
+.golden-fill {
+    fill: gold;
+    clip-path: url(#clip-path);
+}
+
+.none {
+    color: rgb(153, 153, 153);
+}
+
+.main_footer {
+    display: block;
+}

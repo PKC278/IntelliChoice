@@ -1,0 +1,247 @@
+#main {
+    display: none;
+}
+
+nav.navbar {
+    margin-bottom: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    /* 动画渐变 */
+    transition: all 0.2s ease-in-out;
+    height: 60px;
+    white-space: nowrap;
+}
+
+nav div.container-fluid {
+    z-index: 200;
+}
+
+.navbar-scrolled {
+    background-color: rgba(255, 255, 255, 0.85);
+    /* 设置导航栏的背景颜色 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* 添加阴影效果 */
+}
+
+body {
+    padding-top: 60px;
+}
+
+.b-active {
+    font-size: 1.2rem;
+    margin-top: -4px;
+    /* 加粗 */
+    font-weight: 600;
+    position: relative;
+}
+
+.b-active .navButton {
+    color: black;
+}
+
+.b-active::after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: blue;
+    border-radius: 2px;
+    /* margin-top: -1px; */
+}
+
+.b-hover {
+    position: relative;
+    transition: all 0.2s ease-in-out;
+    padding: calc(var(--_gap) / 2);
+}
+
+.b-hover:not(.b-active)::after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: blue;
+    border-radius: 2px;
+    translate: var(--_translate, 0);
+    scale: var(--_width, 0) 1;
+    transition:
+        scale 300ms var(--_scale-delay, 0ms),
+        translate 500ms var(--_translate-delay, 0ms);
+}
+
+.b-hover:hover {
+    --_width: 1;
+}
+
+.b-hover:hover+.b-hover {
+    --_translate: -100%;
+    --_scale-delay: 300ms;
+    --_translate-delay: 200ms;
+}
+
+.b-hover:has(+ :hover) {
+    --_translate: 100%;
+    --_scale-delay: 300ms;
+}
+
+@media (max-width: 767px) {
+    .b-hover::after {
+        width: 90%;
+    }
+
+    .b-hover:hover {
+        --_width: 0.9;
+        --_translate: -5%;
+    }
+}
+
+.navbar-toggler {
+    margin-right: 0;
+}
+
+#UserDiv .btn {
+    border: 0 !important;
+}
+
+#UserDiv .btn:focus {
+    outline: none !important;
+    border: 0 !important;
+}
+
+#UserDiv .btn:active {
+    outline: none !important;
+    border: 0 !important;
+}
+
+.user-profile {
+    top: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 20px;
+    height: 45px;
+    width: 190px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.user-profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    overflow: hidden;
+    margin-left: -5px;
+}
+
+.user-name {
+    font-size: 1.2rem;
+    font-weight: 600;
+    width: 76px;
+}
+
+.logout-button {
+    background-color: #dc3545;
+    color: #ffffff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin-right: -20px;
+}
+
+.login-button {
+    background-color: #3c5df2;
+    color: #ffffff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin-right: -20px;
+}
+
+.logout_img {
+    margin-right: -2px;
+}
+
+.logout-button:hover {
+    background-color: #c82333;
+}
+
+li.nav-item {
+    max-width: 95px;
+}
+
+a.login-a {
+    text-decoration: none;
+    /* 清除下划线 */
+    color: inherit;
+    /* 使用父元素的颜色 */
+}
+
+.commitID {
+    position: fixed;
+    bottom: 0;
+    left: 5px;
+    z-index: 9999;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 3px rgb(0, 0, 0);
+    font-size: 0.8rem;
+}
+
+.commitID a {
+    color: rgb(255, 255, 255);
+}
+
+#cssDetectFoo {
+    background: red;
+    width: 20px;
+    height: 20px;
+}
+
+.main_footer {
+    background: #302a29;
+    color: #fff;
+    position: relative;
+    display: none;
+    margin-top: 50px;
+}
+
+.footer_body {
+    padding: 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer_body .logo {
+    margin-bottom: 25px;
+    height: 60px;
+}
+
+.footer_body .logo img {
+    border: none;
+    vertical-align: middle;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.footer_body .info {
+    color: rgba(255, 255, 255, 0.1);
+    font-size: 12px;
+    width: 100%;
+    text-align: center;
+}
+
+.footer_body .info span {
+    margin: 0 20px;
+    color: #fff;
+    font-size: 14px;
+}
+
+.footer_body .info span a {
+    color: #fff;
+}

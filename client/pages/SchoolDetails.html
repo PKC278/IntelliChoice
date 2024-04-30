@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>院校详情</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/SchoolDetails.css">
+    <link rel="icon" src="/favicon.ico">
+</head>
+
+<body>
+    <div class="topDiv">
+        <div class="container">
+            <div class="schoolBadge">
+                <div>
+                    <img src="" alt="校徽">
+                </div>
+            </div>
+            <div class="schoolDetail">
+                <div class="schoolName">
+                    <p id="schoolName">-</p>
+                    <p class="followCount"><span id="followCount">-</span> 人关注</p>
+                </div>
+                <div class="schoolDetail-1">
+                    <div class="department">
+                        教育行政主管部门：<span id="zgbmmc">-</span>
+                    </div>
+                    <div class="yxtx">
+                        <p>院校特性：</p>
+                    </div>
+                </div>
+                <div class="schoolDetail-2">
+                    <div class="location">
+                        所在地：<span class="yxszd">-</span>
+                    </div>
+                    <div class="txdz">
+                        详细地址：<span class="xxdz">-</span>
+                    </div>
+                </div>
+                <div class="schoolDetail-3">
+                    <div class="gfwz">
+                        官方网址：<a href="" target="_blank" style="text-decoration: underline;">-</a>
+                    </div>
+                    <div class="zswz">
+                        招生网址：<a href="" target="_blank" style="text-decoration: underline;">-</a>
+                    </div>
+                </div>
+                <div class="schoolDetail-4">
+                    官方电话：<span class="gfdh">-</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="fldTab" class="fldTab">
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation"><button class="nav-link active" id="home" data-bs-toggle="pill"
+                    data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                    aria-selected="true">学校首页</button></li>
+            <li class="nav-item" role="presentation"><button class="nav-link" id="yxjj" data-bs-toggle="pill"
+                    data-bs-target="#pills-yxjj" type="button" role="tab" aria-controls="pills-yxjj"
+                    aria-selected="false">学校简介</button></li>
+            <li class="nav-item" role="presentation"><button class="nav-link" id="yxsz" data-bs-toggle="pill"
+                    data-bs-target="#pills-yxsz" type="button" role="tab" aria-controls="pills-yxsz"
+                    aria-selected="false">院系设置</button></li>
+            <li class="nav-item" role="presentation"><button class="nav-link" id="zyjs" data-bs-toggle="pill"
+                    data-bs-target="#pills-zyjs" type="button" role="tab" aria-controls="pills-zyjs"
+                    aria-selected="false">专业介绍</button></li>
+            <li class="nav-item" role="presentation"><button class="nav-link" id="zszc" data-bs-toggle="pill"
+                    data-bs-target="#pills-zszc" type="button" role="tab" aria-controls="pills-zszc"
+                    aria-selected="false">招生简章</button></li>
+            <li class="nav-item" role="presentation"><button class="nav-link" id="lqgz" data-bs-toggle="pill"
+                    data-bs-target="#pills-lqgz" type="button" role="tab" aria-controls="pills-lqgz"
+                    aria-selected="false">录取规则</button></li>
+            <li class="nav-item" role="presentation"><button class="nav-link" id="jxjsz" data-bs-toggle="pill"
+                    data-bs-target="#pills-jxjsz" type="button" role="tab" aria-controls="pills-jxjsz"
+                    aria-selected="false">奖学金设置</button></li>
+            <li class="nav-item" role="presentation"><button class="nav-link" id="sstj" data-bs-toggle="pill"
+                    data-bs-target="#pills-sstj" type="button" role="tab" aria-controls="pills-sstj"
+                    aria-selected="false">食宿条件</button></li>
+            <li class="nav-item" role="presentation"><button class="nav-link" id="wnlqxx" data-bs-toggle="pill"
+                    data-bs-target="#pills-wnlqxx" type="button" role="tab" aria-controls="pills-wnlqxx"
+                    aria-selected="false">往年录取信息</button></li>
+            <li class="nav-item" role="presentation"><button class="nav-link" id="lxbf" data-bs-toggle="pill"
+                    data-bs-target="#pills-lxbf" type="button" role="tab" aria-controls="pills-lxbf"
+                    aria-selected="false">联系办法</button></li>
+            <li class="nav-item" role="presentation"><button class="nav-link" id="dksw" data-bs-toggle="pill"
+                    data-bs-target="#pills-dksw" type="button" role="tab" aria-controls="pills-dksw"
+                    aria-selected="false">答考生问</button></li>
+            <li class="nav-item" role="presentation"><button class="nav-link" id="xf" data-bs-toggle="pill"
+                    data-bs-target="#pills-xf" type="button" role="tab" aria-controls="pills-xf"
+                    aria-selected="false">收费项目</button></li>
+            <li class="nav-item" role="presentation"><button class="nav-link" id="bysjy" data-bs-toggle="pill"
+                    data-bs-target="#pills-bysjy" type="button" role="tab" aria-controls="pills-bysjy"
+                    aria-selected="false">毕业生就业</button></li>
+            <li class="nav-item" role="presentation"><button class="nav-link" id="jcss" data-bs-toggle="pill"
+                    data-bs-target="#pills-jcss" type="button" role="tab" aria-controls="pills-jcss"
+                    aria-selected="false">基础设施</button></li>
+            <li class="nav-item" role="presentation"><button class="nav-link" id="gsl" data-bs-toggle="pill"
+                    data-bs-target="#pills-gsl" type="button" role="tab" aria-controls="pills-gsl"
+                    aria-selected="false">公示栏</button></li>
+            <li class="nav-item" role="presentation"><button class="nav-link" id="tjyq" data-bs-toggle="pill"
+                    data-bs-target="#pills-tjyq" type="button" role="tab" aria-controls="pills-tjyq"
+                    aria-selected="false">体检要求</button></li>
+            <li class="nav-item" role="presentation"><button class="nav-link" id="lqjggs" data-bs-toggle="pill"
+                    data-bs-target="#pills-lqjggs" type="button" role="tab" aria-controls="pills-lqjggs"
+                    aria-selected="false">录取结果公示</button></li>
+            <li class="nav-item" role="presentation"><button class="nav-link" id="qt" data-bs-toggle="pill"
+                    data-bs-target="#pills-qt" type="button" role="tab" aria-controls="pills-qt"
+                    aria-selected="false">其他</button></li>
+            <p class="tips">向右滚动还有更多</p>
+        </ul>
+    </div>
+    <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade container show active" id="pills-home" role="tabpanel"
+            aria-labelledby="pills-home-tab" tabindex="0">
+
+            <ul class="info-box">
+                <li class="info-item">
+                    <div class="info-left">
+                        <div class="info-title">微信</div>
+                        <p>名称：<span class="wxmc">-</span></p>
+                        <p>微信号：<span class="wxh">-</span></p>
+                    </div>
+                    <div class="info-right">
+                        <img class="wxQR" src="">
+                    </div>
+                </li>
+                <li class="info-item">
+                    <div class="info-left">
+                        <div class="info-title">微博</div>
+                        <p>名称：<span class="wbmc">-</span></p>
+                        <p>网址：<a class="wbwz"></a></p>
+                    </div>
+                    <div class="info-right">
+                        <img class="wbQR" src="">
+                    </div>
+                </li>
+                <li class="info-item">
+                    <div class="info-left">
+                        <div class="info-title">百家号</div>
+                        <p>名称：<span class="bjhmc">-</span></p>
+                        <p>ID：<span class="bjhid">-</span></p>
+                    </div>
+                </li>
+                <li class="info-item">
+                    <div class="info-left">
+                        <div class="info-title">视频号</div>
+                        <span class="sph">
+                            <p>无：无</p>
+                        </span>
+                    </div>
+                </li>
+            </ul>
+            <div class="info-tab">
+                <div class="d-flex align-items-start">
+                    <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist"
+                        aria-orientation="vertical">
+                        <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home"
+                            aria-selected="true">微信</button>
+                        <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile"
+                            aria-selected="false">微博</button>
+                        <button class="nav-link" id="v-pills-disabled-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-pills-disabled" type="button" role="tab" aria-controls="v-pills-disabled"
+                            aria-selected="false">百家号</button>
+                        <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages"
+                            aria-selected="false">视频号</button>
+                    </div>
+                    <div class="tab-content" id="v-pills-tabContent">
+                        <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
+                            aria-labelledby="v-pills-home-tab" tabindex="0">
+                            <div class="info-left">
+                                <p>名称：<span class="wxmc">-</span></p>
+                                <p>微信号：<span class="wxh">-</span></p>
+                            </div>
+                            <div class="info-right">
+                                <img class="wxQR" src="">
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
+                            aria-labelledby="v-pills-profile-tab" tabindex="0">
+                            <div class="info-left">
+                                <p>名称：<span class="wbmc">-</span></p>
+                                <p>网址：<a class="wbwz"></a></p>
+                            </div>
+                            <div class="info-right">
+                                <img class="wbQR" src="">
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-disabled" role="tabpanel"
+                            aria-labelledby="v-pills-disabled-tab" tabindex="0">
+                            <div class="info-left">
+                                <p>名称：<span class="bjhmc">-</span></p>
+                                <p>ID：<span class="mjhid">-</span></p>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
+                            aria-labelledby="v-pills-messages-tab" tabindex="0">
+                            <div class="info-left">
+                                <span>
+                                    <span class="sph">
+                                        <p>无：无</p>
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row main-container">
+                <div class="info-content col-lg-8">
+                    <div class="info-manyidu">
+                        <p class="info-manyidu-title"><svg t="1693068672511" class="icon" viewBox="0 0 1024 1024"
+                                version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5897"
+                                data-darkreader-inline-fill="" width="24" height="24">
+                                <path
+                                    d="M319.786667 461.866667H151.893333c-16 0-29.866667 13.226667-29.866666 29.866666 0 16 13.226667 29.866667 29.866666 29.866667h167.893334c16 0 29.866667-13.226667 29.866666-29.866667-0.213333-16.64-13.866667-29.866667-29.866666-29.866666z m0 0"
+                                    fill="#54af7d" p-id="5898" style="--darkreader-inline-fill: #40896b;"
+                                    data-darkreader-inline-fill=""></path>
+                                <path
+                                    d="M798.72 837.12l-5.76 2.346667v29.226666c0 41.173333-33.706667 75.093333-75.093333 75.093334H173.013333c-41.173333 0-75.093333-33.706667-75.093333-75.093334V155.946667c0-41.173333 33.706667-75.093333 75.093333-75.093334h544.853334c41.173333 0 75.093333 33.706667 75.093333 75.093334v29.226666l5.76 2.346667c21.76 8.106667 42.453333 18.346667 61.226667 30.293333l13.226666 8.106667V134.613333c0-74.026667-60.16-134.613333-134.613333-134.613333H151.893333C77.866667 0 17.28 60.16 17.28 134.613333v754.773334C17.28 963.413333 77.44 1024 151.893333 1024h586.88c73.813333 0 134.613333-60.16 134.613334-134.613333v-90.453334l-13.226667 8.106667c-18.986667 11.733333-39.68 22.186667-61.44 30.08z m0 0"
+                                    fill="#54af7d" p-id="5899" style="--darkreader-inline-fill: #40896b;"
+                                    data-darkreader-inline-fill=""></path>
+                                <path
+                                    d="M319.786667 315.093333H151.893333c-16 0-29.866667 13.226667-29.866666 29.866667 0 16.64 13.226667 29.866667 29.866666 29.866667h167.893334c16 0 29.866667-13.226667 29.866666-29.866667-0.213333-16.64-13.866667-29.866667-29.866666-29.866667z m0 293.546667H151.893333c-16 0-29.866667 13.226667-29.866666 29.866667s13.226667 29.866667 29.866666 29.866666h167.893334c16 0 29.866667-13.226667 29.866666-29.866666s-13.866667-29.866667-29.866666-29.866667z m298.026666-111.786667h53.333334v-5.76a68.906667 68.906667 0 0 0-68.693334-68.693333 68.906667 68.906667 0 0 0-68.693333 68.693333v5.76h53.333333v-5.76c0-8.533333 6.826667-15.573333 15.573334-15.573333 8.533333 0 15.573333 6.826667 15.573333 15.573333v5.76z m0 0"
+                                    fill="#54af7d" p-id="5900" style="--darkreader-inline-fill: #40896b;"
+                                    data-darkreader-inline-fill=""></path>
+                                <path
+                                    d="M707.626667 213.12c-165.12 0-299.093333 134.186667-299.093334 299.093333 0 165.12 134.186667 299.093333 299.093334 299.093334 165.12 0 299.093333-134.186667 299.093333-299.093334 0-164.906667-133.973333-299.093333-299.093333-299.093333z m0 523.733333c-123.733333 0-225.28-100.906667-225.28-224.64 0-123.733333 100.906667-225.28 225.28-225.28s225.28 100.906667 225.28 225.28c-0.64 123.946667-101.546667 224.64-225.28 224.64z m0 0"
+                                    fill="#54af7d" p-id="5901" style="--darkreader-inline-fill: #40896b;"
+                                    data-darkreader-inline-fill=""></path>
+                                <path
+                                    d="M743.68 575.36c0 20.053333-16 36.053333-36.053333 36.053333s-36.053333-16-36.053334-36.053333v-5.76h-53.333333v5.76c0 49.28 40.106667 89.386667 89.386667 89.386667 49.28 0 89.386667-40.106667 89.386666-89.386667v-5.76h-53.333333v5.76z m68.906667-152.533333a68.906667 68.906667 0 0 0-68.693334 68.693333v5.76h53.333334v-5.76c0-8.533333 6.826667-15.573333 15.573333-15.573333 8.533333 0 15.573333 6.826667 15.573333 15.573333v5.76h53.333334v-5.76c-1.066667-38.186667-31.36-68.693333-69.12-68.693333z m0 0"
+                                    fill="#54af7d" p-id="5902" style="--darkreader-inline-fill: #40896b;"
+                                    data-darkreader-inline-fill=""></path>
+                            </svg>院校满意度</p>
+                        <div class="info-manyidu-main">
+                            <div class="flex-wrapper">
+                                <div class="single-chart">
+                                    <svg viewBox="0 0 36 36" class="circular-chart orange">
+                                        <path class="circle-bg" d="M18 2.0845
+                                          a 15.9155 15.9155 0 0 1 0 31.831
+                                          a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                        <path class="circle" stroke-dasharray="0, 100" d="M18 2.0845
+                                          a 15.9155 15.9155 0 0 1 0 31.831
+                                          a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                        <text x="18" y="15.35" class="percentage-rank orange">-</text>
+                                        <text x="18" y="22.35" class="percentage-count">-</text>
+                                    </svg>
+                                    <div class="manyidu-word">综合满意度</div>
+                                </div>
+
+                                <div class="single-chart">
+                                    <svg viewBox="0 0 36 36" class="circular-chart green">
+                                        <path class="circle-bg" d="M18 2.0845
+                                          a 15.9155 15.9155 0 0 1 0 31.831
+                                          a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                        <path class="circle" stroke-dasharray="0, 100" d="M18 2.0845
+                                          a 15.9155 15.9155 0 0 1 0 31.831
+                                          a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                        <text x="18" y="15.35" class="percentage-rank green">-</text>
+                                        <text x="18" y="22.35" class="percentage-count">-</text>
+                                    </svg>
+                                    <div class="manyidu-word">环境满意度</div>
+                                </div>
+
+                                <div class="single-chart">
+                                    <svg viewBox="0 0 36 36" class="circular-chart blue">
+                                        <path class="circle-bg" d="M18 2.0845
+                                          a 15.9155 15.9155 0 0 1 0 31.831
+                                          a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                        <path class="circle" stroke-dasharray="0, 100" d="M18 2.0845
+                                          a 15.9155 15.9155 0 0 1 0 31.831
+                                          a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                        <text x="18" y="15.35" class="percentage-rank blue">-</text>
+                                        <text x="18" y="22.35" class="percentage-count">-</text>
+                                    </svg>
+                                    <div class="manyidu-word">生活满意度</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info-pfn">
+                        <p class="info-manyidu-title"><svg t="1693151598035" class="icon" viewBox="0 0 1024 1024"
+                                version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4610"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24">
+                                <path
+                                    d="M978.013091 312.645818a510.231273 510.231273 0 0 0-269.265455-272.011636 505.018182 505.018182 0 0 0-393.821091 0 505.157818 505.157818 0 0 0-160.791272 109.498182A512.069818 512.069818 0 0 0 6.004364 511.627636a511.953455 511.953455 0 0 0 308.992 471.016728 499.828364 499.828364 0 0 0 196.933818 40.122181 500.433455 500.433455 0 0 0 357.608727-149.666909c46.405818-46.545455 83.269818-101.725091 108.474182-162.397091a517.376 517.376 0 0 0 0-398.056727z m-31.697455 198.912c-0.116364 241.966545-195.025455 438.853818-434.385454 438.853818-239.499636 0-434.338909-196.887273-434.338909-438.853818 0-242.036364 194.839273-438.877091 434.338909-438.877091 239.499636-0.023273 434.385455 196.840727 434.385454 438.877091z m0 0"
+                                    p-id="4611" fill="#1cb278"></path>
+                                <path
+                                    d="M312.180364 458.170182c39.424 0 71.563636-32.395636 71.563636-72.192s-32.139636-72.168727-71.563636-72.168727c-39.400727 0-71.354182 32.325818-71.354182 72.052363a71.517091 71.517091 0 0 0 71.354182 72.308364z m399.569454 1.396363c39.284364 0 71.307636-32.395636 71.307637-72.122181 0-39.936-32.023273-72.331636-71.307637-72.331637-39.400727 0-71.540364 32.395636-71.540363 72.331637 0 39.726545 32.139636 72.122182 71.540363 72.122181z m58.577455 161.512728a36.398545 36.398545 0 0 0-50.082909 7.400727c-47.918545 65.024-125.858909 103.68-208.314182 103.68-82.478545 0-160.418909-38.656-208.244364-103.563636a36.445091 36.445091 0 0 0-50.152727-7.540364 36.235636 36.235636 0 0 0-7.284364 50.455273 325.981091 325.981091 0 0 0 114.082909 96.721454 334.801455 334.801455 0 0 0 302.987637 0 327.074909 327.074909 0 0 0 114.292363-96.791272c11.636364-15.965091 8.401455-38.330182-7.284363-50.362182z m0 0"
+                                    p-id="4612" fill="#1cb278"></path>
+                            </svg>专业满意度</p>
+                        <div class="pfn-ul">
+                            <ul class="pfn-ul-left">
+                                <li class="pfn-ul-li">
+                                    <div class="pfn-bdiv-1">
+                                        <div class="pfn-sdiv-1"><span class="pfn-ul-font">1</span></div>
+                                    </div>
+                                    <p class="pfn-content"><a class="pfn-link" href="" target="_blank"><span
+                                                class="pfn-name">-</span></a><span class="pfn-grade">-.-</span><span
+                                            class="pfn-member">( - 人)</span></p>
+                                </li>
+                                <li class="pfn-ul-li">
+                                    <div class="pfn-bdiv-2">
+                                        <div class="pfn-sdiv-2"><span class="pfn-ul-font">2</span></div>
+                                    </div>
+                                    <p class="pfn-content"><a class="pfn-link" href="" target="_blank"><span
+                                                class="pfn-name">-</span></a><span class="pfn-grade">-.-</span><span
+                                            class="pfn-member">( - 人)</span></p>
+                                </li>
+                                <li class="pfn-ul-li">
+                                    <div class="pfn-bdiv-3">
+                                        <div class="pfn-sdiv-3"><span class="pfn-ul-font">3</span></div>
+                                    </div>
+                                    <p class="pfn-content"><a class="pfn-link" href="" target="_blank"><span
+                                                class="pfn-name">-</span></a><span class="pfn-grade">-.-</span><span
+                                            class="pfn-member">( - 人)</span></p>
+                                </li>
+                                <li class="pfn-ul-li">
+                                    <div class="pfn-bdiv-4">
+                                        <div class="pfn-sdiv-4"><span class="pfn-ul-font">4</span></div>
+                                    </div>
+                                    <p class="pfn-content"><a class="pfn-link" href="" target="_blank"><span
+                                                class="pfn-name">-</span></a><span class="pfn-grade">-.-</span><span
+                                            class="pfn-member">( - 人)</span></p>
+                                </li>
+                                <li class="pfn-ul-li">
+                                    <div class="pfn-bdiv-4">
+                                        <div class="pfn-sdiv-4"><span class="pfn-ul-font">5</span></div>
+                                    </div>
+                                    <p class="pfn-content"><a class="pfn-link" href="" target="_blank"><span
+                                                class="pfn-name">-</span></a><span class="pfn-grade">-.-</span><span
+                                            class="pfn-member">( - 人)</span></p>
+                                </li>
+                            </ul>
+                            <ul class="pfn-ul-right">
+                                <li class="pfn-ul-li">
+                                    <div class="pfn-bdiv-4">
+                                        <div class="pfn-sdiv-4"><span class="pfn-ul-font">6</span></div>
+                                    </div>
+                                    <p class="pfn-content"><a class="pfn-link" href="" target="_blank"><span
+                                                class="pfn-name">-</span></a><span class="pfn-grade">-.-</span><span
+                                            class="pfn-member">( - 人)</span></p>
+                                </li>
+                                <li class="pfn-ul-li">
+                                    <div class="pfn-bdiv-4">
+                                        <div class="pfn-sdiv-4"><span class="pfn-ul-font">7</span></div>
+                                    </div>
+                                    <p class="pfn-content"><a class="pfn-link" href="" target="_blank"><span
+                                                class="pfn-name">-</span></a><span class="pfn-grade">-.-</span><span
+                                            class="pfn-member">( - 人)</span></p>
+                                </li>
+                                <li class="pfn-ul-li">
+                                    <div class="pfn-bdiv-4">
+                                        <div class="pfn-sdiv-4"><span class="pfn-ul-font">8</span></div>
+                                    </div>
+                                    <p class="pfn-content"><a class="pfn-link" href="" target="_blank"><span
+                                                class="pfn-name">-</span></a><span class="pfn-grade">-.-</span><span
+                                            class="pfn-member">( - 人)</span></p>
+                                </li>
+                                <li class="pfn-ul-li">
+                                    <div class="pfn-bdiv-4">
+                                        <div class="pfn-sdiv-4"><span class="pfn-ul-font">9</span></div>
+                                    </div>
+                                    <p class="pfn-content"><a class="pfn-link" href="" target="_blank"><span
+                                                class="pfn-name">-</span></a><span class="pfn-grade">-.-</span><span
+                                            class="pfn-member">( - 人)</span></p>
+                                </li>
+                                <li class="pfn-ul-li">
+                                    <div class="pfn-bdiv-4">
+                                        <div class="pfn-sdiv-4"><span class="pfn-ul-font-10">10</span>
+                                        </div>
+                                    </div>
+                                    <p class="pfn-content"><a class="pfn-link" href="" target="_blank"><span
+                                                class="pfn-name">-</span></a><span class="pfn-grade">-.-</span><span
+                                            class="pfn-member">( - 人)</span></p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="info-pfn">
+                            <p class="info-manyidu-title"><svg t="1693158065358" class="icon" viewBox="0 0 1027 1024"
+                                    version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2627" width="24" height="24"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <path
+                                        d="M289.28 977.92v-51.2l453.12 35.84c17.92 0 33.28-5.12 46.08-12.8 35.84-17.92 61.44-51.2 64-87.04l115.2-417.28c2.56-10.24 2.56-25.6-5.12-46.08v-2.56l-2.56-2.56c-17.92-12.8-33.28-17.92-48.64-17.92H563.2l7.68-71.68 12.8-181.76c2.56-10.24 0-23.04-7.68-33.28s-17.92-17.92-30.72-20.48c-2.56 0-7.68-2.56-12.8-2.56-15.36 0-28.16 7.68-35.84 17.92l-184.32 268.8-20.48 28.16H120.32c-10.24 0-20.48 5.12-28.16 10.24-25.6 12.8-40.96 38.4-40.96 69.12v391.68c0 12.8 5.12 30.72 12.8 40.96 12.8 23.04 33.28 35.84 58.88 35.84H243.2v51.2H122.88c-43.52 0-84.48-23.04-104.96-64C5.12 890.88 0 870.4 0 849.92V458.24c0-48.64 25.6-92.16 66.56-115.2 23.04-10.24 43.52-15.36 69.12-17.92H268.8l189.44-281.6c17.92-20.48 46.08-30.72 74.24-30.72 25.6 0 48.64 7.68 66.56 25.6 23.04 23.04 35.84 53.76 33.28 81.92l-7.68 204.8H921.6c35.84 0 66.56 15.36 87.04 43.52 15.36 23.04 23.04 58.88 15.36 92.16L908.8 883.2c-17.92 76.8-81.92 128-161.28 133.12l-458.24-38.4z"
+                                        p-id="2628" fill="#1cb278"></path>
+                                    <path d="M245.76 366.08h46.08v611.84h-46.08z" p-id="2629" fill="#1cb278"></path>
+                                </svg>专业推荐人数</p>
+                            <div class="pfn-ul">
+                                <ul class="pfn-ul-left">
+                                    <li class="pfn-ul-li">
+                                        <div class="pfn-bdiv-1">
+                                            <div class="pfn-sdiv-1"><span class="pfn-ul-font">1</span>
+                                            </div>
+                                        </div>
+                                        <p class="pfn-content"><a class="pfn-link" href="" target="_blank"><span
+                                                    class="pfn-name">-</span></a><span class="pfn-grade">-.-</span><span
+                                                class="pfn-member">( - 人)</span></p>
+                                    </li>
+                                    <li class="pfn-ul-li">
+                                        <div class="pfn-bdiv-2">
+                                            <div class="pfn-sdiv-2"><span class="pfn-ul-font">2</span>
+                                            </div>
+                                        </div>
+                                        <p class="pfn-content"><a class="pfn-link" href="" target="_blank"><span
+                                                    class="pfn-name">-</span></a><span class="pfn-grade">-.-</span><span
+                                                class="pfn-member">( - 人)</span></p>
+                                    </li>
+                                    <li class="pfn-ul-li">
+                                        <div class="pfn-bdiv-3">
+                                            <div class="pfn-sdiv-3"><span class="pfn-ul-font">3</span>
+                                            </div>
+                                        </div>
+                                        <p class="pfn-content"><a class="pfn-link" href="" target="_blank"><span
+                                                    class="pfn-name">-</span></a><span class="pfn-grade">-.-</span><span
+                                                class="pfn-member">( - 人)</span></p>
+                                    </li>
+                                    <li class="pfn-ul-li">
+                                        <div class="pfn-bdiv-4">
+                                            <div class="pfn-sdiv-4"><span class="pfn-ul-font">4</span>
+                                            </div>
+                                        </div>
+                                        <p class="pfn-content"><a class="pfn-link" href="" target="_blank"><span
+                                                    class="pfn-name">-</span></a><span class="pfn-grade">-.-</span><span
+                                                class="pfn-member">( - 人)</span></p>
+                                    </li>
+                                    <li class="pfn-ul-li">
+                                        <div class="pfn-bdiv-4">
+                                            <div class="pfn-sdiv-4"><span class="pfn-ul-font">5</span>
+                                            </div>
+                                        </div>
+                                        <p class="pfn-content"><a class="pfn-link" href="" target="_blank"><span
+                                                    class="pfn-name">-</span></a><span class="pfn-grade">-.-</span><span
+                                                class="pfn-member">( - 人)</span></p>
+                                    </li>
+                                </ul>
+                                <ul class="pfn-ul-right">
+                                    <li class="pfn-ul-li">
+                                        <div class="pfn-bdiv-4">
+                                            <div class="pfn-sdiv-4"><span class="pfn-ul-font">6</span>
+                                            </div>
+                                        </div>
+                                        <p class="pfn-content"><a class="pfn-link" href="" target="_blank"><span
+                                                    class="pfn-name">-</span></a><span class="pfn-grade">-.-</span><span
+                                                class="pfn-member">( - 人)</span></p>
+                                    </li>
+                                    <li class="pfn-ul-li">
+                                        <div class="pfn-bdiv-4">
+                                            <div class="pfn-sdiv-4"><span class="pfn-ul-font">7</span>
+                                            </div>
+                                        </div>
+                                        <p class="pfn-content"><a class="pfn-link" href="" target="_blank"><span
+                                                    class="pfn-name">-</span></a><span class="pfn-grade">-.-</span><span
+                                                class="pfn-member">( - 人)</span></p>
+                                    </li>
+                                    <li class="pfn-ul-li">
+                                        <div class="pfn-bdiv-4">
+                                            <div class="pfn-sdiv-4"><span class="pfn-ul-font">8</span>
+                                            </div>
+                                        </div>
+                                        <p class="pfn-content"><a class="pfn-link" href="" target="_blank"><span
+                                                    class="pfn-name">-</span></a><span class="pfn-grade">-.-</span><span
+                                                class="pfn-member">( - 人)</span></p>
+                                    </li>
+                                    <li class="pfn-ul-li">
+                                        <div class="pfn-bdiv-4">
+                                            <div class="pfn-sdiv-4"><span class="pfn-ul-font">9</span>
+                                            </div>
+                                        </div>
+                                        <p class="pfn-content"><a class="pfn-link" href="" target="_blank"><span
+                                                    class="pfn-name">-</span></a><span class="pfn-grade">-.-</span><span
+                                                class="pfn-member">( - 人)</span></p>
+                                    </li>
+                                    <li class="pfn-ul-li">
+                                        <div class="pfn-bdiv-4">
+                                            <div class="pfn-sdiv-4"><span class="pfn-ul-font-10">10</span>
+                                            </div>
+                                        </div>
+                                        <p class="pfn-content"><a class="pfn-link" href="" target="_blank"><span
+                                                    class="pfn-name">-</span></a><span class="pfn-grade">-.-</span><span
+                                                class="pfn-member">( - 人)</span></p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <p class="info-manyidu-title"><svg t="1693152948589" class="icon" viewBox="0 0 1024 1024"
+                                    version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="6797" width="24" height="24"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <path
+                                        d="M523.264 38.2976c5.888 2.7136 10.624 7.424 13.312 13.312l121.088 264.192c3.9424 8.576 12.0832 14.4896 21.4528 15.5904l288.6656 33.5104a27.0336 27.0336 0 0 1 15.1808 46.7712l-213.8112 196.7616c-6.9632 6.4-10.0608 15.9744-8.192 25.2416l57.3184 284.9024a27.0336 27.0336 0 0 1-39.7824 28.8768l-253.2352-142.5408a27.0336 27.0336 0 0 0-26.5216 0L245.504 947.456a27.0336 27.0336 0 0 1-39.7824-28.8768l57.344-284.9024a27.0336 27.0336 0 0 0-8.192-25.2416l-213.8368-196.7616a27.0336 27.0336 0 0 1 15.1808-46.7712l288.6656-33.536c9.3696-1.0752 17.5104-6.9888 21.4528-15.5648l121.088-264.192c6.2208-13.568 22.272-19.5328 35.84-13.312zM512 192.6912l-71.9104 156.9024a108.16 108.16 0 0 1-85.8624 62.3872l-171.4432 19.8912 127.0016 116.8896a108.1856 108.1856 0 0 1 33.8688 94.72l-1.0752 6.1952-34.048 169.1648 150.4-84.6336a108.1856 108.1856 0 0 1 100.2496-3.072l5.888 3.072 150.3744 84.6336-34.048-169.1648a108.1856 108.1856 0 0 1 28.3136-96.5376l4.5056-4.3776 126.976-116.8896-171.4176-19.8912a108.1856 108.1856 0 0 1-83.2512-57.0624l-2.6112-5.3248L512 192.6912z"
+                                        p-id="6798" fill="#1cb278"></path>
+                                </svg>专业推荐指数</p>
+                            <div class="pfn-ul">
+                                <ul class="pfn-ul-left">
+                                    <li class="pfn-ul-li">
+                                        <div class="pfn-bdiv-1">
+                                            <div class="pfn-sdiv-1"><span class="pfn-ul-font">1</span>
+                                            </div>
+                                        </div>
+                                        <p class="pfn-content"><a class="pfn-link" href="" target="_blank"><span
+                                                    class="pfn-name">-</span></a><span class="pfn-grade">-.-</span><span
+                                                class="pfn-member">( - 人)</span>
+                                        </p>
+                                    </li>
+                                    <li class="pfn-ul-li">
+                                        <div class="pfn-bdiv-2">
+                                            <div class="pfn-sdiv-2"><span class="pfn-ul-font">2</span>
+                                            </div>
+                                        </div>
+                                        <p class="pfn-content"><a class="pfn-link" href="" target="_blank"><span
+                                                    class="pfn-name">-</span></a><span class="pfn-grade">-.-</span><span
+                                                class="pfn-member">( - 人)</span>
+                                        </p>
+                                    </li>
+                                    <li class="pfn-ul-li">
+                                        <div class="pfn-bdiv-3">
+                                            <div class="pfn-sdiv-3"><span class="pfn-ul-font">3</span>
+                                            </div>
+                                        </div>
+                                        <p class="pfn-content"><a class="pfn-link" href="" target="_blank"><span
+                                                    class="pfn-name">-</span></a><span class="pfn-grade">-.-</span><span
+                                                class="pfn-member">( - 人)</span>
+                                        </p>
+                                    </li>
+                                    <li class="pfn-ul-li">
+                                        <div class="pfn-bdiv-4">
+                                            <div class="pfn-sdiv-4"><span class="pfn-ul-font">4</span>
+                                            </div>
+                                        </div>
+                                        <p class="pfn-content"><a class="pfn-link" href="" target="_blank"><span
+                                                    class="pfn-name">-</span></a><span class="pfn-grade">-.-</span><span
+                                                class="pfn-member">( - 人)</span>
+                                        </p>
+                                    </li>
+                                    <li class="pfn-ul-li">
+                                        <div class="pfn-bdiv-4">
+                                            <div class="pfn-sdiv-4"><span class="pfn-ul-font">5</span>
+                                            </div>
+                                        </div>
+                                        <p class="pfn-content"><a class="pfn-link" href="" target="_blank"><span
+                                                    class="pfn-name">-</span></a><span class="pfn-grade">-.-</span><span
+                                                class="pfn-member">( - 人)</span>
+                                        </p>
+                                    </li>
+                                </ul>
+                                <ul class="pfn-ul-right">
+                                    <li class="pfn-ul-li">
+                                        <div class="pfn-bdiv-4">
+                                            <div class="pfn-sdiv-4"><span class="pfn-ul-font">6</span>
+                                            </div>
+                                        </div>
+                                        <p class="pfn-content"><a class="pfn-link" href="" target="_blank"><span
+                                                    class="pfn-name">-</span></a><span class="pfn-grade">-.-</span><span
+                                                class="pfn-member">( - 人)</span>
+                                        </p>
+                                    </li>
+                                    <li class="pfn-ul-li">
+                                        <div class="pfn-bdiv-4">
+                                            <div class="pfn-sdiv-4"><span class="pfn-ul-font">7</span>
+                                            </div>
+                                        </div>
+                                        <p class="pfn-content"><a class="pfn-link" href="" target="_blank"><span
+                                                    class="pfn-name">-</span></a><span class="pfn-grade">-.-</span><span
+                                                class="pfn-member">( - 人)</span>
+                                        </p>
+                                    </li>
+                                    <li class="pfn-ul-li">
+                                        <div class="pfn-bdiv-4">
+                                            <div class="pfn-sdiv-4"><span class="pfn-ul-font">8</span>
+                                            </div>
+                                        </div>
+                                        <p class="pfn-content"><a class="pfn-link" href="" target="_blank"><span
+                                                    class="pfn-name">-</span></a><span class="pfn-grade">-.-</span><span
+                                                class="pfn-member">( - 人)</span>
+                                        </p>
+                                    </li>
+                                    <li class="pfn-ul-li">
+                                        <div class="pfn-bdiv-4">
+                                            <div class="pfn-sdiv-4"><span class="pfn-ul-font">9</span>
+                                            </div>
+                                        </div>
+                                        <p class="pfn-content"><a class="pfn-link" href="" target="_blank"><span
+                                                    class="pfn-name">-</span></a><span class="pfn-grade">-.-</span><span
+                                                class="pfn-member">( - 人)</span>
+                                        </p>
+                                    </li>
+                                    <li class="pfn-ul-li">
+                                        <div class="pfn-bdiv-4">
+                                            <div class="pfn-sdiv-4"><span class="pfn-ul-font-10">10</span>
+                                            </div>
+                                        </div>
+                                        <p class="pfn-content"><a class="pfn-link" href="" target="_blank"><span
+                                                    class="pfn-name">-</span></a><span class="pfn-grade">-.-</span><span
+                                                class="pfn-member">( - 人)</span>
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pfn-message col-lg-4">
+                    <div class="ai_messages">
+                        <p>介绍一下北京大学经济学类专业</p>
+                        <p>北京大学经济学类专业是北京大学经济学院下属的专业方向之一。该专业旨在培养具有扎实的经济学理论基础和广泛的社会科学知识，具备经济学的基本分析能力和研究方法，以及较强的逻辑思维、问题解决和理论应用能力的高级经济人才。
+                        </p>
+                    </div>
+                    <a href="/chat" target="_blank">
+                        <div class="btn rounded-pill">直接询问智能AI<svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                height="20" fill="currentColor" class="bi bi-arrow-right-circle-fill"
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
+                            </svg></div>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        <div class="tab-pane fade container" id="pills-yxjj" role="tabpanel" aria-labelledby="pills-yxjj-tab"
+            tabindex="0"></div>
+        <div class="tab-pane fade container" id="pills-yxsz" role="tabpanel" aria-labelledby="pills-yxsz-tab"
+            tabindex="0"></div>
+        <div class="tab-pane fade container" id="pills-zyjs" role="tabpanel" aria-labelledby="pills-zyjs-tab"
+            tabindex="0"></div>
+        <div class="tab-pane fade container" id="pills-zszc" role="tabpanel" aria-labelledby="pills-zszc-tab"
+            tabindex="0"></div>
+        <div class="tab-pane fade container" id="pills-lqgz" role="tabpanel" aria-labelledby="pills-lqgz-tab"
+            tabindex="0"></div>
+        <div class="tab-pane fade container" id="pills-jxjsz" role="tabpanel" aria-labelledby="pills-jxjsz-tab"
+            tabindex="0">
+        </div>
+        <div class="tab-pane fade container" id="pills-sstj" role="tabpanel" aria-labelledby="pills-sstj-tab"
+            tabindex="0"></div>
+        <div class="tab-pane fade container" id="pills-wnlqxx" role="tabpanel" aria-labelledby="pills-wnlqxx-tab"
+            tabindex="0">
+        </div>
+        <div class="tab-pane fade container" id="pills-lxbf" role="tabpanel" aria-labelledby="pills-lxbf-tab"
+            tabindex="0"></div>
+        <div class="tab-pane fade container" id="pills-dksw" role="tabpanel" aria-labelledby="pills-dksw-tab"
+            tabindex="0"></div>
+        <div class="tab-pane fade container" id="pills-xf" role="tabpanel" aria-labelledby="pills-xf-tab" tabindex="0">
+        </div>
+        <div class="tab-pane fade container" id="pills-bysjy" role="tabpanel" aria-labelledby="pills-bysjy-tab"
+            tabindex="0">
+        </div>
+        <div class="tab-pane fade container" id="pills-jcss" role="tabpanel" aria-labelledby="pills-jcss-tab"
+            tabindex="0"></div>
+        <div class="tab-pane fade container" id="pills-gsl" role="tabpanel" aria-labelledby="pills-gsl-tab"
+            tabindex="0"></div>
+        <div class="tab-pane fade container" id="pills-tjyq" role="tabpanel" aria-labelledby="pills-tjyq-tab"
+            tabindex="0"></div>
+        <div class="tab-pane fade container" id="pills-lqjggs" role="tabpanel" aria-labelledby="pills-lqjggs-tab"
+            tabindex="0">
+        </div>
+        <div class="tab-pane fade container" id="pills-qt" role="tabpanel" aria-labelledby="pills-qt-tab" tabindex="0">
+        </div>
+    </div>
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/SchoolDetails.js"></script>
+</body>
+
+</html>

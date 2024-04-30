@@ -1,0 +1,533 @@
+body {
+    background-color: #f1f2f3;
+}
+
+#main {
+    display: block;
+}
+
+#loadingDiv {
+    display: none;
+}
+
+.title {
+    background-color: #58b384;
+    height: 120px;
+    display: grid;
+    place-items: center;
+}
+
+.search {
+    place-items: center;
+    padding: 20px;
+}
+
+.search-info {
+    font-size: 15px;
+    color: #999999;
+    white-space: nowrap;
+}
+
+input.search-input:focus {
+    outline: none;
+    box-shadow: none;
+    border: 1px solid #dfe2e6;
+}
+
+.middle {
+    background-color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.item-box {
+    padding: 20px;
+}
+
+.item-title {
+    color: #7b7b7b;
+    white-space: nowrap;
+    width: 84px;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.item-options {
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+.item-options span {
+    margin-right: 10px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.item-options span.selected {
+    color: #58b384;
+    /* 禁止点击 */
+    pointer-events: none;
+}
+
+.schoolCard {
+    margin: 18px;
+}
+
+div.card {
+    border-radius: 0;
+    border: 0;
+    margin: -8px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+div.card:hover {
+    box-shadow: 0 0 11px rgba(33, 33, 33, .2);
+}
+
+.card-body {
+    height: 115px;
+}
+
+.card-body img {
+    /* 浮动在左侧 */
+    float: left;
+    margin: 5px;
+    margin-right: 15px;
+}
+
+.vertical-line {
+    width: 1px;
+    height: 1em;
+    /* 调整高度以适应你需要的竖线长度 */
+    background-color: black;
+    /* 设置竖线的颜色 */
+    /* 不换行 */
+}
+
+.card-title {
+    font-weight: normal;
+    font-size: 16px;
+    padding-right: 35px;
+}
+
+.card-text {
+    line-height: 30px;
+    font-size: 14px;
+    padding-left: 100px;
+
+}
+
+.schoolLoading_container {
+    text-align: center;
+    padding-top: 0px;
+    pointer-events: none;
+}
+
+.rounded-rectangle {
+    width: 195px;
+    height: 28px;
+    background-color: #fdf4e5;
+    border-radius: 20px 0 0 20px;
+    /* 顺序是左上、右上、右下、左下角的圆角半径 */
+    border-bottom-right-radius: 0;
+    /* 右下角的直角大小 */
+    border-top-right-radius: 0;
+    /* 右上角的直角大小 */
+    /* 浮动 */
+    float: right;
+    margin-top: -35px;
+    margin-right: -16px;
+}
+
+.manyidu {
+    position: absolute;
+    top: 40px;
+    right: 16px;
+    padding-left: 15px;
+    padding-top: 1px;
+}
+
+.manyidu span {
+    font-size: 14px;
+    color: rgb(102, 102, 102);
+}
+
+.manyidu svg {
+    margin-top: -3px;
+}
+
+.golden-fill {
+    fill: gold;
+}
+
+span.manyidu-score {
+    font-weight: bold;
+    color: gold;
+}
+
+.star {
+    display: inline-block;
+}
+
+@media (max-width: 1040px) {
+    .star {
+        display: none;
+    }
+
+    .rounded-rectangle {
+        width: 90px;
+    }
+}
+
+@media (max-width: 766px) {
+    .star {
+        display: inline-block;
+    }
+
+    .manyidu-info {
+        display: inline-block;
+    }
+
+    .rounded-rectangle {
+        width: 195px;
+    }
+
+    .card-body {
+        height: auto;
+    }
+}
+
+@media (max-width: 550px) {
+    .star {
+        display: none;
+    }
+
+    .manyidu-info {
+        display: none;
+    }
+
+    .rounded-rectangle {
+        width: 45px;
+    }
+
+    .card-body {
+        height: auto;
+    }
+}
+
+#schoolBadge {
+    align-items: center;
+    justify-content: center;
+}
+
+.delButton {
+    position: absolute;
+    display: flex;
+    right: 65px;
+    top: 11px;
+    z-index: 999;
+}
+
+.delButton:hover svg {
+    cursor: pointer;
+    fill: #95999f;
+}
+
+.delButton.hide {
+    display: none;
+}
+
+span.img-load {
+    /* margin-left: 100px; */
+    float: left;
+    margin: 5px;
+    margin-right: 15px;
+    background-color: #f1f2f3;
+    width: 75px;
+    height: 75px;
+    border-radius: 3px;
+}
+
+h5.title-load {
+    margin-left: 100px;
+    background-color: #f1f2f3;
+    width: 65px;
+    height: 20px;
+    white-space: nowrap;
+    border-radius: 3px;
+}
+
+svg.svg-load {
+    margin-top: -10px;
+}
+
+div.secend-load {
+    background-color: #f1f2f3;
+    border-radius: 3px;
+    padding-top: 0px;
+    height: 20px;
+    width: 180px;
+    margin-top: 10px;
+    white-space: nowrap;
+}
+
+div.thired-load {
+    background-color: #f1f2f3;
+    border-radius: 3px;
+    padding-top: 0px;
+    height: 20px;
+    width: 230px;
+    margin-top: -20px;
+    white-space: nowrap;
+}
+
+div.loading_animation {
+    position: absolute;
+    margin-left: -10%;
+    width: 120%;
+    height: 100%;
+    bottom: 100%;
+    animation: moveUpDown 1.5s ease infinite;
+    background-image: linear-gradient(to bottom right, transparent 40%, white 50%, transparent 60%);
+}
+
+@keyframes moveUpDown {
+    0% {
+        transform: translateY(0);
+        /* 初始位置 */
+    }
+
+    100% {
+        transform: translateY(230px);
+        /* 向下移动115px */
+    }
+}
+
+.collect {
+    position: absolute;
+    top: -4.5px;
+    left: 5px;
+    display: none;
+}
+
+.collect.collected {
+    display: block;
+}
+
+.card-body:hover .collect {
+    display: block;
+    color: #b0b0b0;
+}
+
+.collectMessage::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(214, 230, 222, 0.9);
+    z-index: 1;
+    animation: messageslideUp 0.5s ease forwards, messageslideDown 0.5s ease forwards 1s;
+    /* 添加动画 */
+}
+
+.message_content {
+    display: none;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    font-size: 20px;
+    animation: contentslideUp 0.5s ease forwards, contentslideDown 0.5s ease forwards 1s;
+}
+
+.collectMessage .message_content {
+    display: block;
+}
+
+@keyframes messageslideUp {
+    from {
+        top: 100%;
+    }
+
+    to {
+        top: 0;
+    }
+}
+
+@keyframes messageslideDown {
+    from {
+        top: 0;
+    }
+
+    to {
+        top: -100%;
+    }
+}
+
+@keyframes contentslideUp {
+    from {
+        top: 150%;
+    }
+
+    to {
+        top: 50%;
+    }
+}
+
+@keyframes contentslideDown {
+    from {
+        top: 50%;
+    }
+
+    to {
+        top: -50%;
+    }
+}
+
+.DelcollectMessage::before {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(243, 216, 218, 0.9);
+    z-index: 998;
+    animation: DelmessageslideUp 0.5s ease forwards, DelmessageslideDown 0.5s ease forwards 1s;
+    /* 添加动画 */
+}
+
+.Delmessage_content {
+    display: none;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    font-size: 20px;
+    animation: DelcontentslideUp 0.5s ease forwards, DelcontentslideDown 0.5s ease forwards 1s;
+}
+
+.DelcollectMessage .Delmessage_content {
+    display: block;
+}
+
+@keyframes DelmessageslideUp {
+    from {
+        bottom: 100%;
+    }
+
+    to {
+        bottom: 0;
+    }
+}
+
+@keyframes DelmessageslideDown {
+    from {
+        bottom: 0;
+    }
+
+    to {
+        bottom: -100%;
+    }
+}
+
+@keyframes DelcontentslideUp {
+    from {
+        top: -50%;
+    }
+
+    to {
+        top: 50%;
+    }
+}
+
+@keyframes DelcontentslideDown {
+    from {
+        top: 50%;
+    }
+
+    to {
+        top: 150%;
+    }
+}
+
+.Favorites {
+    /* 根据屏幕定位 */
+    position: fixed;
+    right: -10px;
+    top: 50%;
+    height: 80px;
+    width: 40px;
+    background-color: #ffe072;
+    border: 0;
+    padding-left: 6px;
+    font-size: 15px;
+    color: white;
+    z-index: 999;
+}
+
+.Favorites:hover {
+    background-color: #ffe998;
+    color: white;
+}
+
+.Favorites:focus {
+    outline: none;
+    background-color: #ffe998;
+    color: white;
+}
+
+.Favorites:active {
+    outline: none !important;
+    background-color: #ffe998 !important;
+    color: white !important;
+}
+
+.manyiduSmall {
+    width: 95px;
+    font-size: 13px;
+    padding-left: 13px;
+    padding-top: 4px;
+}
+
+.offcanvas-body {
+    padding-right: 0;
+    padding-left: 10px;
+}
+
+.offcanvas-body .manyidu-info {
+    display: inline-block;
+}
+
+.offcanvas-body .card {
+    margin-bottom: 15px;
+}
+
+.offcanvas-body .card-title,
+.offcanvas-body .card-text span {
+    font-size: 13px;
+}
+
+.offcanvas-body .card-title {
+    margin: 5px;
+}
+
+.offcanvas-body .card-text {
+    padding-left: 85px;
+}
+
+.DelBtn {
+    position: absolute;
+    right: 20px;
+    bottom: 3px;
+    color: red;
+    font-size: 12px;
+}
+
+.DelBtn:hover {
+    text-decoration: underline;
+}
