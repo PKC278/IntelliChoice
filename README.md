@@ -4,17 +4,15 @@
 
 完整数据库下载地址：```https://drive.google.com/file/d/1KMd7RxtIXXMoXA3IoZWjspynJSFxRd7X/view?usp=share_link```
 
-![image-20240430102458002](assets/image-20240430102458002.png)
+![首页](assets/image-20241116173336839.png)
 
-![image-20240430102545776](assets/image-20240430102545776.png)
+![AI 对话](assets/image-20241116173346358.png)
 
-![image-20240430102600894](assets/image-20240430102600894.png)
+![院校查询](assets/image-20241116173403065.png)
 
-![image-20240430102611279](assets/image-20240430102611279.png)
+![专业查询](assets/image-20241116173453554.png)
 
-![image-20240430102627323](assets/image-20240430102627323.png)
-
-
+![性格测试](assets/image-20241116173504132.png)
 
 ## 部署网站
 

@@ -32,7 +32,7 @@ function checkLogin(callback) {
                 window.location.reload();
             } else {
                 userName = data.userName;
-                // 绑定登陆按钮
+                // 绑定登录按钮
                 const login_button = document.getElementById('UserDiv');
                 // 将userName转换为中文
                 if (isTextMatchingPattern(userName)) {

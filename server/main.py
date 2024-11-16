@@ -266,7 +266,7 @@ def login_post():
         return response
 
     except:
-        status = "登陆失败"
+        status = "登录失败"
 
     # 构建要返回的数据
     response_data = {"status": status}

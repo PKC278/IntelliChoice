@@ -255,7 +255,7 @@ function collectSchool(event) {
             })
             .catch(error => console.error('Error:', error));
     } else {
-        alert('请先登陆');
+        alert('请先登录');
         // savePreviousPage();
         // window.location.href = '/login';
     }

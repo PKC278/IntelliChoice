@@ -273,14 +273,14 @@ function main() {
 
     const handleSend = () => {
         document.activeElement.blur();
-        // 检查cookie中是否有token，如果没有则跳转到登陆页面
+        // 检查cookie中是否有token，如果没有则跳转到登录页面
         if (document.cookie.indexOf('token') === -1) {
             savePreviousPage()
             // 检测屏幕尺寸
             var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
             // 根据屏幕宽度决定跳转的URL
             var url = screenWidth < 767 ? '/login?wap=true' : '/login';
-            window.location.href = url; 
+            window.location.href = url;
             return;
         }
         const sessionId = Math.random().toString(36).slice(-8);
